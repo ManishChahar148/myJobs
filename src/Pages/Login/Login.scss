@@ -1,0 +1,45 @@
+.loginComponent {
+    padding-top: calc(var(--header-height ) + 100px);
+    padding-bottom: 94px;
+    background: linear-gradient(253deg, var(--dark-gray) 0%, #1A253C 100%) top no-repeat, var(--white) 0% 0% no-repeat padding-box;
+    background-size: 100% 362px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    transition: .2s;
+}
+
+.formContainer {
+    /* border: 1px solid black; */
+    margin-top: 23px;
+}
+
+.loginButtonContainer {
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bottomTextLoginFormContainer {
+    margin-top: 53px;
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 16px;
+    font-family: Helvetica;
+    color: var(--dark-gray);
+}
+.createAnAccountTextLoginForm{
+    color: var(--dark-blue);
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 580px) {
+    .loginComponent {
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: .2s;
+    }
+}

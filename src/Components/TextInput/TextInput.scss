@@ -1,0 +1,59 @@
+.textInputComponent {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.textInputLabel {
+    font-size: 14px;
+    color: var(--dark-gray);
+    letter-spacing: 0px;
+    font-family: Helvetica;
+    text-align: left;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightSideOptionTextInput {
+    color: var(--dark-blue);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.textInputField {
+    border: none;
+    margin-top: 8px;
+    padding: 15px 17px 15px 17px;
+    border: 2px solid var(--light-gray);
+    background: #E8E8E833 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    transition: 1s;
+    color: var(--dark-gray);
+    font-size: 14px;
+    font-family: Helvetica;
+    resize: vertical;
+
+    &::placeholder {
+        font-size: 14px;
+        color: var(--light-gray);
+        font-family: Helvetica;
+    }
+
+    &:focus {
+        outline: none;
+        border: 2px solid var(--dark-blue);
+        transition: 1s;
+    }
+}
+
+.textInputError {
+    font-size: 12px;
+    color: var(--error-text);
+    margin-top: 6px;
+    text-align: right;
+    font-family: Helvetica;
+}

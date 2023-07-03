@@ -1,0 +1,48 @@
+:root {
+  --dark-blue: #43AFFF;
+  --dark-gray: #303F60;
+  --white: #EDF6FF;
+  --light-gray: #A9AFBC;
+  --header-bottom-border: #4D618E;
+  --header-height: 70px;
+  --error-text: #FF0000;
+  --pure-white: #FFFFFF;
+  --profile-bg: #D9EFFF;
+
+
+
+  --jobs-p-l: 188px;
+  --jobs-p-r: 188px;
+  --jobs-p-l-100: 100px;
+  --jobs-p-r-100: 100px;
+  --jobs-p-l-140: 140px;
+  --jobs-p-r-140: 140px;
+  --jobs-p-l-10: 10px;
+  --jobs-p-r-10: 10px;
+
+
+  --loader-z-index: 1000;
+}
+
+.App {
+  text-align: center;
+  // border: 1px solid red;
+  min-height: 100vh;
+  box-sizing: border-box;
+  // max-width: 1920px;
+  // margin-left: auto;
+  // margin-right: auto;
+  
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+a{
+  text-decoration: none;
+
+  &:hover {
+    // color: var(--pure-white) !important;
+  }
+}

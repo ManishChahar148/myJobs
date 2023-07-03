@@ -1,0 +1,53 @@
+@mixin slideUpAppearAnim($animName: 'slideUpAppearAnim', $animDuration: 0.5s, $fromTop: 60px, $toTop: 45px) {
+    animation-name: #{$animName};
+    animation-duration: #{$animDuration};
+    @keyframes #{$animName}  {
+        0% {
+            opacity: 0;
+            top: #{$fromTop};
+        }
+        100% {
+            opacity: 1;
+            top: #{$toTop};
+        }
+    }
+}
+
+@mixin useCustomTootltip($tooltipText) {
+    position: relative;
+    overflow: visible;
+    // border : 1px solid red;
+    &::before {
+        content: #{$tooltipText};
+        position: absolute;
+        top: -50px;
+        z-index: 1000;
+        color: white;
+        background-color: rgb(31, 29, 29);
+        padding: 10px;
+        border-radius: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: fit-content;
+        @include slideUpAppearAnim('tooltipAppers', .1s, -30px, 10);
+    }
+
+    &::after {
+        content: '';
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid rgb(31, 29, 29);
+        border-bottom: 10px solid transparent;
+        z-index: 1000;
+        position: absolute;
+        top: -9px;
+        font-size: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include slideUpAppearAnim('tooltipAppers', .1s, -30px, 20);
+    }
+}
+
+.redAsterisk {
+    color: red;
+}

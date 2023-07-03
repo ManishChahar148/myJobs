@@ -1,0 +1,93 @@
+.signupComponent {
+    padding-top: calc(var(--header-height) + 25px);
+    padding-bottom: 94px;
+    background: linear-gradient(253deg, var(--dark-gray) 0%, #1A253C 100%) top no-repeat, var(--white) 0% 0% no-repeat padding-box;
+    background-size: 100% 362px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+   //  align-items: center;
+}
+
+
+.signupFormContainer {
+    /* border: 1px solid black; */
+    margin-top: 23px;
+}
+
+.signupButtonContainer {
+   /* border: 1px solid black; */
+   text-align: center;
+   margin-top: 30px;
+}
+
+.bottomTextSignupFormContainer {
+   margin-top: 53px;
+   text-align: center;
+   letter-spacing: 0px;
+   font-size: 16px;
+   font-family: Helvetica;
+}
+.createAnAccountTextSignupForm{
+   color: var(--dark-blue);
+   cursor: pointer;
+   margin-left: 5px;
+}
+
+.passwordContainerSignup {
+   /* border: 1px solid black; */
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+}
+
+.passwordContainerSignup>div {
+   width: 48%;
+}
+
+.IAmAContainer {
+   /* border: 1px solid black; */
+   margin-top: 29px;
+}
+
+.iAmAText {
+   font-size: 16px;
+   color: var(--dark-gray);
+   letter-spacing: 0px;
+   font-family: Helvetica;
+   text-align: left;
+}
+
+.iAmButtons {
+   margin-top: 8px;
+//    border: 1px solid black;
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   button {
+       margin-right: 20px;
+   }
+
+}
+
+.roleDisplayOnSmallScreen {
+    display: none;
+}
+
+
+@media screen and (max-width: 580px) {
+   .signupComponent {
+       padding-left: 10px;
+       padding-right: 10px;
+   }
+   .iAmButtons {
+     &LabelText {
+      display: none;
+     }  
+   }
+   .roleDisplayOnSmallScreen {
+       display: inline;
+   }
+}

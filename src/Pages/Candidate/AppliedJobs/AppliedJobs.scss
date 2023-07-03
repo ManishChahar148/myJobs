@@ -1,0 +1,15 @@
+.appliedJobsComponent {
+    padding-top: calc(var(--header-height) + 12.5px);
+    padding-bottom: 67px;
+    background: linear-gradient(253deg, var(--dark-gray) 0%, #1A253C 100%) top no-repeat, var(--white) 0% 0% no-repeat padding-box;
+    background-size: 100% 210px;
+    min-height: 100vh;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seeAllJobsButtonCandidate {
+    margin-top: 40px;
+}

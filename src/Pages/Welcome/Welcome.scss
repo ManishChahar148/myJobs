@@ -1,0 +1,206 @@
+.welcomeComponent {
+    // border: 1px solid red;
+    background: linear-gradient(253deg, var(--dark-gray) 0%, #1A253C 100%) top no-repeat, var(--white) 0% 0% no-repeat padding-box;
+    background-size: 100% 464px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: var(--header-height);
+}
+
+.welcomeContentContainer {
+    min-height: 395px;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    // padding-left: 190px;
+    // padding-right: 167px;
+}
+
+.leftSideContent {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.rightSideImage {
+    /* border: 1px solid red; */
+    min-width: 400px;
+}
+
+.rightSideImage img {
+    border-radius: 20px;
+    box-shadow: 0px 30px 36px #557DA526;    
+}
+
+
+.welcomeTextContainer {
+    color: var(--white);
+    font-size: 64px;
+}
+
+.welcomeTextContainer div {
+    // border: 1px solid red;
+    text-align: left;
+}
+
+.jobsTextLarge {
+    color: var(--dark-blue);
+}
+
+.getStartedButtonWrapper {
+    // border: 1px solid orange;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.welcomePageContent {
+    /* background: #EDF6FF; */
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin-top: 80px;
+    padding-bottom: 20px;
+}
+
+.whyUsContentContainer {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    // padding-left: 190px;
+    // padding-right: 167px;
+}
+
+.whyUsHeading {
+    font-size: 22px;
+    color: var(--dark-gray);
+    font-weight: bold;
+    // border: 1px solid red;
+    text-align: left;
+}
+
+.whyUseCardsContainer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: 'wrap';
+    /* box-sizing: border-box; */
+    justify-content: space-between;
+    /* border : 1px solid red */
+}
+
+.whyUsCard {
+    /* height: 192px; */
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 5px;
+    width: 32.33%;
+    box-sizing: border-box;
+    /* background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box; */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #557DA526;
+}
+
+.whyUsCard div:first-child {
+    color: var(--unnamed-color-43afff);
+    text-align: left;
+    letter-spacing: 0px;
+    color: #43AFFF;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.whyUsCard div:last-child {
+    margin-top: 29px;
+    font-size: 18px;
+    /* font-family: 'Helvetica'; */
+    color: var(--dark-gray);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.companiesTrust {
+    /* border: 1px solid black; */
+    margin-top: 80px;
+    // padding-left: 190px;
+    // padding-right: 167px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.companiesTrustHeading {
+    font-size: 22px;
+    color: var(--dark-gray);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.companiesTrustImageContainer {
+    /* border: 1px solid black; */
+}
+
+.companiesTrustImageContainer img {
+    width: 100%;
+    height: 170px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .welcomeComponent {
+        background-size: 100% 500px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .rightSideImage{
+        position: relative;
+    }
+    
+    .rightSideImage img {
+        /* border-radius: 20px;
+        box-shadow: 0px 30px 36px #557DA526; */
+        width: 100%;
+        text-align: bottom;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .welcomeContentContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightSideImage {
+        margin-top: 40px;
+        min-width: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+    .rightSideImage img {
+        position: relative;
+    }
+    .welcomeComponent {
+        background-size: 100% 600px;
+    }
+    .whyUseCardsContainer {
+        flex-direction: column;
+    }
+    .whyUsCard {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .rightSideImage {
+        min-width: 300px;
+    }
+}
